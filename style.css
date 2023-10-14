@@ -399,3 +399,93 @@ header {
     padding: 10px;
     font-size: 2rem;
 }
+
+/* Making it reponsive */
+@media (max-width: 1468px) {
+    .home .text {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1112px) {
+    .home .text {
+        background: #eeeff1;
+        border-radius: 1rem;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-container form {
+        display: grid;
+        align-items: end;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 11px 40px;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    .sign-up {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 18px 40px;
+    }
+    section {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 864px) {
+    .home .text {
+        background: none;
+        width: 100%;
+    }
+    .home {
+        margin-top: 1rem;
+        background: none;
+        grid-template-columns: 1fr;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    header .navbar {
+        position: absolute;
+        width: 100%;
+        top: -500px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        transition: 0.2 ease;
+        text-align: left;
+    }
+    .navbar.active {
+        top: 100%;
+    }
+    .navbar a {
+        padding: 0.5rem;
+        border-left: 2px solid var(--main-color);
+        margin: 0.5rem;
+        display: block;
+    }
+    .navbar a:hover {
+        color: #fff;
+        background-color: var(--main-color);
+        border: none;
+    }
+    .navbar a::after {
+        display: none;
+    }
+}
