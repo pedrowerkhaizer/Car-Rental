@@ -128,10 +128,13 @@ header {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
+.home .text {
+    width: 60%;
+}
 .text h1 {
     font-size: 3.5rem;
     letter-spacing: 1px;
-    line-height: 125%;
+    line-height: 1.25;
 }
 .text span {
     color: var(--main-color);
@@ -289,4 +292,70 @@ header {
 }
 .services-container .box .btn:hover {
     background: var(--main-color);
+}
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.about-container img {
+    width: 100%;
+}
+.about-container span {
+    font-weight: 500;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.about-text p {
+    margin: 0.5rem 0 1.4rem;
+}
+.about-text .btn {
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.about-text .btn:hover {
+    background: var(--main-color);
+}
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.reviews-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
+.reviews-container .box h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+}
+.reviews-container .box p {
+    font-style: italic;
+}
+.reviews-container .box .stars .bx {
+    color: var(--second-color);
+}
+.rev-img {
+    width: 70px;
+    height: 70px;
+}
+.rev-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
 }
