@@ -324,7 +324,7 @@ header {
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 .reviews-container .box {
@@ -358,4 +358,44 @@ header {
     object-fit: cover;
     object-position: center;
     border: 2px solid var(--second-color);
+}
+.newsletter {
+    background: linear-gradient(to top right, var(--main-color), var(--second-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsletter h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+.newsletter .box {
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 4px 8px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.newsletter .box input {
+    border: none;
+    outline: none;
+}
+.newsletter .box .btn {
+    background: #474fa0;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 0.5rem;
+}
+.copyright {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social a {
+    color: var(--text-color);
+    padding: 10px;
+    font-size: 2rem;
 }
